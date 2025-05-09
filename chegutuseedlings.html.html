@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chegutu Seedlings provides quality vegetable, fruit, and flower seedlings in Zimbabwe." />
+  <title>Chegutu Seedlings</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+    .animate-fade-in.delay-200 {
+      animation-delay: 0.2s;
+    }
+    .animate-fade-in.delay-400 {
+      animation-delay: 0.4s;
+    }
+    .animate-fade-in.delay-600 {
+      animation-delay: 0.6s;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-green-700 text-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center">
+        <a href="https://wa.me/+263771737635?text=Hi%20Chegutu%20Seedlings" target="_blank" aria-label="Message us on WhatsApp">
+            <img src="images/logo.jpg" alt="Chegutu Seedlings Logo" class="h-14 md:h-16 w-auto mr-4 rounded-full object-cover">
+        </a>     
+        <h1 class="text-2xl md:text-3xl font-bold">Chegutu Seedlings</h1>
+      </div>
+      <nav class="hidden md:flex space-x-6 text-lg">
+        <a href="#about" class="hover:underline hover:text-gray-200 transition duration-300">About</a>
+        <a href="#products" class="hover:underline hover:text-gray-200 transition duration-300">Products</a>
+        <a href="#gallery" class="hover:underline hover:text-gray-200 transition duration-300">Gallery</a>
+        <a href="#contact" class="hover:underline hover:text-gray-200 transition duration-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-green-600 text-white py-28 text-center relative overflow-hidden">
+    <img src="images/background pic.jpg" alt="Seedlings background" class="absolute inset-0 w-full h-full object-cover z-0" />
+    <div class="absolute inset-0 bg-black opacity-50 mix-blend-multiply z-0"></div>
+    <div class="relative z-10 container mx-auto px-4">
+      <h2 class="text-5xl md:text-6xl font-bold mb-4 animate-fade-in">Grow Your Garden with Quality Seedlings</h2>
+      <p class="text-2xl mb-8 animate-fade-in delay-200">Providing healthy and robust seedlings for all your planting needs.</p>
+      <a href="#products" class="inline-block bg-white text-green-700 font-bold py-3 px-8 rounded-full shadow-md hover:bg-gray-200 transition duration-300 text-xl animate-fade-in delay-400">Explore Seedlings</a>
+    </div>
+  </section>
+
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-4 text-center max-w-4xl">
+      <h2 class="text-4xl font-bold mb-6 animate-fade-in">About Us</h2>
+      <p class="text-lg leading-relaxed animate-fade-in delay-200">
+        Welcome to Chegutu Seedlings! We are dedicated to providing high-quality seedlings to help you achieve a thriving garden or farm. With years of experience, we nurture each seedling to ensure it has the best start in life. Our passion is helping our community grow beautiful and productive plants.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Products -->
+  <section id="products" class="bg-gray-100 py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 animate-fade-in">Our Seedlings</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Vegetable -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-transform transform hover:scale-105 animate-fade-in delay-200">
+          <img src="images/tomato.jpg" alt="Tomato Seedlings" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">Vegetable Seedlings</h3>
+            <p class="text-gray-700">Variety of vegetable seedlings like tomatoes, peppers, leafy greens,onions and more.</p>
+          </div>
+        </div>
+        <!-- Fruit -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-transform transform hover:scale-105 animate-fade-in delay-400">
+          <img src="images/fruit.jpg" alt="Fruit Tree Sapling" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">Fruit Seedlings</h3>
+            <p class="text-gray-700">Young fruit trees and bushes ready for planting.</p>
+          </div>
+        </div>
+        <!-- Flowers -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-transform transform hover:scale-105 animate-fade-in delay-600">
+          <img src="images/flower.jpg" alt="Colorful flower seedlings" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">Flower Seedlings</h3>
+            <p class="text-gray-700">Beautiful flower seedlings to add color and fragrance to your garden.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 animate-fade-in">Gallery</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-lg animate-fade-in delay-200">
+          <img src="images/healthy seedlings.jpg" alt="Healthy seedlings" class="w-full h-64 object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-lg animate-fade-in delay-400">
+          <img src="images/our nursery 2.jpg" alt="Nursery garden" class="w-full h-64 object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-lg animate-fade-in delay-600">
+          <img src="images/seedlings ready.jpg" alt="Seedlings ready for sale" class="w-full h-64 object-cover" />
+        </div>
+      </div>
+    <p class="text-center mt-6 text-gray-600 text-lg">Visit Us: Number 436, Hills Cattle Trail Road, Chegutu, Zimbabwe.</p>
+    <div class="map-container mt-8 rounded-lg overflow-hidden shadow-md">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d740.4899285111128!2d30.153560474261404!3d-18.14354949944604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1936b5276738d4cd%3A0x53451c096642c82c!2sChegutu%20Seedlings!5e1!3m2!1sen!2sin!4v1746811844544!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div></div>
+   </div>
+    <p class="text-center mt-2 text-gray-600 text-sm">
+        <a href="https://www.google.com/maps/place/Chegutu+Seedlings/@-18.1435495,30.1535605,17z/data=!3m1!4b1!4m6!3m5!1s0x1936b5276738d4cd:0x53451c096642c82c!8m2!3d-18.1435495!4d30.1557492!16s%2Fg%2F11j6q9g7lq" class="text-green-700 underline hover:text-green-900 transition duration-300">View on Google Maps</a>
+   </p>
+    
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-green-700 text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-8 animate-fade-in">Get in Touch</h2>
+      <p class="text-xl mb-8 animate-fade-in delay-200">Have questions or ready to order seedlings? Contact us directly via WhatsApp!</p>
+      <a href="https://wa.me/+263771737635?text=Hi%20Chegutu%20Seedlings" class="inline-block bg-white text-green-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition duration-300 text-xl animate-fade-in delay-400">
+        Message us on WhatsApp
+      </a>
+      <p class="mt-4 text-sm">Or call us at: <a href="tel:+263771737635" class="text-white underline hover:text-gray-200 transition duration-300">+263 771 737 635</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-sm">&copy; 2025 Chegutu Seedlings. All rights reserved.</p>
+      <p class="text-xs mt-2">Created by Lincon</p>
+    </div>
+  </footer>
+
+</body>
+</html>
